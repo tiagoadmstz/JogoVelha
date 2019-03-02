@@ -1,3 +1,5 @@
+package br.com.sharpgame.test;
+
 
 import br.com.sharpgame.entities.SharpGameUtil;
 import static org.junit.Assert.*;
