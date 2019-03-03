@@ -5,6 +5,8 @@
  */
 package br.com.sharpgame.main;
 
+import br.com.sharpgame.util.ConsoleGame;
+
 /**
  *
  * @author Tiago
@@ -12,7 +14,8 @@ package br.com.sharpgame.main;
 public class Main {
 
     public static void main(String[] args) {
-        
+        ConsoleGame cg = new ConsoleGame();
+        cg.startGame();
     }
 
 }

@@ -5,6 +5,7 @@
  */
 package br.com.sharpgame.entities;
 
+import br.com.sharpgame.util.SharpGameUtil;
 import java.util.List;
 import java.util.ArrayList;
 
@@ -34,7 +35,7 @@ public class JogoDaVelha {
         if(jogador_2 != null){
             jogadores[1] = jogador_2;
         } else {
-            jogadores[1] = new Jogador("Máquina");
+            jogadores[1] = new Jogador("Máquina", "O");
         }
     }
 

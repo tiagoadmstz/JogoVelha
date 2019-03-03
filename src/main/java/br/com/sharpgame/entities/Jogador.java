@@ -18,8 +18,9 @@ public class Jogador {
     private String simbolo;
     private Color color;
 
-    public Jogador(String nome) {
+    public Jogador(String nome, String simbolo) {
         this.nome = nome;
+        this.simbolo = simbolo;
         vitorias = 0;
     }
 

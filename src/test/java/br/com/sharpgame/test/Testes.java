@@ -1,7 +1,7 @@
 package br.com.sharpgame.test;
 
 
-import br.com.sharpgame.entities.SharpGameUtil;
+import br.com.sharpgame.util.SharpGameUtil;
 import static org.junit.Assert.*;
 import org.junit.Test;
 

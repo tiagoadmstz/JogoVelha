@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.com.sharpgame.entities;
+package br.com.sharpgame.util;
 
+import br.com.sharpgame.entities.Jogador;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -31,21 +32,20 @@ public class SharpGameUtil {
     public boolean conferirResultado(int[][] matriz, int jogador) {
         if (matriz.length == 3) {
             if (matriz[0].length == 3) {
-                int s = jogador;
                 for (int x = 0; x < 3; x++) {
                     //verifica linhas
-                    if (s == matriz[x][0] && s == matriz[x][1] && s == matriz[x][2]) {
+                    if (jogador == matriz[x][0] && jogador == matriz[x][1] && jogador == matriz[x][2]) {
                         return true;
                     }
                     //verifica colunas
-                    if (s == matriz[0][x] && s == matriz[1][x] && s == matriz[2][x]) {
+                    if (jogador == matriz[0][x] && jogador == matriz[1][x] && jogador == matriz[2][x]) {
                         return true;
                     }
                 }
                 //verifica diagonal
-                if (s == matriz[0][0] && s == matriz[1][1] && s == matriz[2][2]) {
+                if (jogador == matriz[0][0] && jogador == matriz[1][1] && jogador == matriz[2][2]) {
                     return true;
-                } else if (s == matriz[2][0] && s == matriz[1][1] && s == matriz[0][2]) {
+                } else if (jogador == matriz[2][0] && jogador == matriz[1][1] && jogador == matriz[0][2]) {
                     return true;
                 }
                 return false;

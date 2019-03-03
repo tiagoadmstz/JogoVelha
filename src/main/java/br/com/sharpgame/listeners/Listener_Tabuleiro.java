@@ -6,7 +6,7 @@
 package br.com.sharpgame.listeners;
 
 import br.com.sharpgame.entities.Jogador;
-import br.com.sharpgame.entities.SharpGameUtil;
+import br.com.sharpgame.util.SharpGameUtil;
 import br.com.sharpgame.frames.Form_Tabuleiro;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
@@ -59,8 +59,7 @@ public class Listener_Tabuleiro implements ActionListener {
     }
 
     private void jogar() {
-        Jogador j = new Jogador("Tiago");
-        j.setSimbolo("X");
+        Jogador j = new Jogador("Tiago", "X");
         j.setVitorias(0);
         util.fazerJogada(j, matriz, 0, 0);
     }
